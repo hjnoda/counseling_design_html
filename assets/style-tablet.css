@@ -1,0 +1,124 @@
+@media (min-width: 768px) {
+    /* common */
+    .row-wrap {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    .d-tablet {
+        display: block;
+    }
+
+    /* rightside nav */
+    .section-nav {
+        background-color: var(--faleblue);
+        padding: 1rem;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+    .section-nav:not(:first-of-type) {
+        margin-top: 20px;
+    }
+    a.nav-link {
+        color: var(--textnavlink);
+    }
+
+    /* greeting */
+    .greeting {
+        display: flex;
+        flex-direction: row;
+    }
+    .greeting-btn {
+        margin-top: 0;
+        margin-left: auto;
+    }
+
+    /* section 予約 */
+    .section-item {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .item-content {
+        display: inline-flex;
+        border-radius: 10px 0 0 10px;
+        -webkit-border-radius: 10px 0 0 10px;
+        -moz-border-radius: 10px 0 0 10px;
+        -ms-border-radius: 10px 0 0 10px;
+        -o-border-radius: 10px 0 0 10px;
+        flex-grow: 3;
+    }
+    .item-content div:not(:first-child) {
+        padding-left: 1.5rem;
+    }
+    .item-btn {
+        display: inline-flex;
+        width: auto;
+        border-radius: 0 10px 10px 0;
+        -webkit-border-radius: 0 10px 10px 0;
+        -moz-border-radius: 0 10px 10px 0;
+        -ms-border-radius: 0 10px 10px 0;
+        -o-border-radius: 0 10px 10px 0;
+        padding: 1rem;
+        flex-grow: 1.5;
+        justify-content: center;
+    }
+    .section-item-wrap {
+        display: flex;
+    }
+    .section-item-wrap:not(:first-of-type) {
+        margin-top: 1rem;
+    }
+
+    /* section お知らせ */
+    .news-content {
+        flex-direction: row;
+        align-items: center;
+    }
+    .news-content div:not(:first-child) {
+        padding-left: 1.5rem;
+    }
+
+    /* section list item (過去のカウンセリング) */
+    .section-list-item-wrap {
+        display: flex;
+        background-color: var(--faleblue);
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        margin-top: 10px;
+    }
+    .list-item-content {
+        display: flex;
+        flex-direction: row;
+        flex-basis: 100%;
+        padding: 10px;
+        align-items: center;
+    }
+    .list-item-content .item-date {
+        flex-basis: 50%;
+    }
+    .list-item-content .item-time {
+        flex-basis: 25%;
+    }
+    .list-item-content .item-conseller {
+        flex-basis: 25%;
+    }
+
+    .section-list-item-wrap .item-btn {
+        flex-basis: 30%;
+        border-radius: 0 10px 10px 0;
+        -webkit-border-radius: 0 10px 10px 0;
+        -moz-border-radius: 0 10px 10px 0;
+        -ms-border-radius: 0 10px 10px 0;
+        -o-border-radius: 0 10px 10px 0;
+        display: flex;
+        justify-content: center;
+        align-items:center
+    }
+
+}
