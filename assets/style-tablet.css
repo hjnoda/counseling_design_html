@@ -25,16 +25,6 @@
         color: var(--textnavlink);
     }
 
-    /* greeting */
-    .greeting {
-        display: flex;
-        flex-direction: row;
-    }
-    .greeting-btn {
-        margin-top: 0;
-        margin-left: auto;
-    }
-
     /* section 予約 */
     .section-item {
         max-width: 100%;
