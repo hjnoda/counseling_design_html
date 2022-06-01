@@ -17,7 +17,7 @@
     max-width: 996px;
 }
 .d-tablet {
-    display: none;
+    display: none!important;
 }
 a {
     text-decoration: none;
@@ -207,17 +207,21 @@ a {
     padding-bottom: 40px;
 }
 /* list */
+.section-item-wrap {
+    display: flex;
+}
 .section-item-wrap:not(:first-child) {
     margin-top: 10px;
 }
 .item-content {
     background-color: var(--faleblue);
     padding: 1rem;
-    border-radius: 10px 10px 0 0;
-    -webkit-border-radius: 10px 10px 0 0;
-    -moz-border-radius: 10px 10px 0 0;
-    -ms-border-radius: 10px 10px 0 0;
-    -o-border-radius: 10px 10px 0 0;
+    border-radius: 10px 0 0 10px;
+    -webkit-border-radius: 10px 0 0 10px;
+    -moz-border-radius: 10px 0 0 10px;
+    -ms-border-radius: 10px 0 0 10px;
+    -o-border-radius: 10px 0 0 10px;
+    flex-grow: 3;
 }
 .item-content i {
     color: var(--blue);
@@ -225,25 +229,25 @@ a {
 .section-item {
     margin-top: 1rem;
 }
-.itemSwiper .item-date {
+.item-date {
     display: block;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 .item-time, 
 .item-counselor {
     display: inline;
 }
 /* section カウンセリング待ち */
-
-.itemSwiper .item-btn {
-    border-radius: 0 0 10px 10px;
-    -webkit-border-radius: 0 0 10px 10px;
-    -moz-border-radius: 0 0 10px 10px;
-    -ms-border-radius: 0 0 10px 10px;
-    -o-border-radius: 0 0 10px 10px;
-    width: 100%;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
+.item-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 10px 10px 0;
+    -webkit-border-radius: 0 10px 10px 0;
+    -moz-border-radius: 0 10px 10px 0;
+    -ms-border-radius: 0 10px 10px 0;
+    -o-border-radius: 0 10px 10px 0;
+    flex-basis: 20%;
 }
 .item-btn.start {
     background-color: var(--salmon);
@@ -263,16 +267,26 @@ a {
 .item-btn.edit:hover {
     background-color: var(--bluedim);
 }
+.item-btn.detail {
+    background-color: var(--textnavlink);
+    color: var(--white);
+}
+.item-btn.detail:hover {
+    background-color: var(--textdefault);
+}
 
 /* section お知らせ */
 .section-news {
     width: 100%;
     margin-top: 1rem;
 }
+a.item-link,
 a.news-link {
     display: block;
     color: var(--textdefault);
 }
+a.item-link .item-content,
+a.item-link .item-content i,
 a.news-link .news-content {
     transition: all .25s;
     -webkit-transition: all .25s;
@@ -280,6 +294,8 @@ a.news-link .news-content {
     -ms-transition: all .25s;
     -o-transition: all .25s;
 }
+a.item-link:hover .item-content,
+a.item-link:hover .item-content i,
 a.news-link:hover .news-content {
     background-color: var(--salmon);
     color: var(--white);
@@ -341,38 +357,6 @@ a.news-link:not(:first-of-type) {
 .ad-subtitle {
     opacity: .5;
     font-size: .8rem;
-}
-
-/* section list item */
-.list-item-content {
-    display: inline-flex;
-    border-radius: 10px 0 0 10px;
-    -webkit-border-radius: 10px 0 0 10px;
-    -moz-border-radius: 10px 0 0 10px;
-    -ms-border-radius: 10px 0 0 10px;
-    -o-border-radius: 10px 0 0 10px;
-    flex-grow: 3;
-}
-.list-item-content div:not(:first-child) {
-    padding-left: 1.5rem;
-}
-.section-list-item-wrap {
-    display: flex;
-}
-.section-list-item-wrap:not(:first-of-type) {
-    margin-top: 1rem;
-}
-.section-list-item-wrap .item-btn {
-    display: inline-flex;
-    border-radius: 0 10px 10px 0;
-    -webkit-border-radius: 0 10px 10px 0;
-    -moz-border-radius: 0 10px 10px 0;
-    -ms-border-radius: 0 10px 10px 0;
-    -o-border-radius: 0 10px 10px 0;
-    padding: 1rem;
-    flex-grow: 1.5;
-    justify-content: center;
-    max-width: 120px;
 }
 /* cancel detail 予約キャンセル詳細ページ */
 .table.th-30 th {

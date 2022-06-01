@@ -5,7 +5,7 @@
         padding-bottom: 4rem;
     }
     .d-tablet {
-        display: block;
+        display: block!important;
     }
 
     /* rightside nav */
@@ -31,44 +31,31 @@
         display: flex;
         flex-direction: column;
     }
-    .item-date {
-        display: inline;
-        font-size: 1rem;
+    .section-item-wrap,
+    .itemSwiper .section-item-wrap {
+        display: flex;
     }
-    .item-content,
-    .list-item-content {
+    .section-item-wrap:not(:first-of-type){
+        margin-top: 1rem;
+    }
+    .item-content {
         display: inline-flex;
-        border-radius: 10px 0 0 10px;
+        border-radius: 10px;
         -webkit-border-radius: 10px 0 0 10px;
         -moz-border-radius: 10px 0 0 10px;
         -ms-border-radius: 10px 0 0 10px;
         -o-border-radius: 10px 0 0 10px;
-        flex-grow: 3;
     }
-    .item-content div:not(:first-child),
-    .list-item-content div:not(:first-child) {
-        padding-left: 1.5rem;
+    .item-content div:not(:first-child){
+        padding-left: 1rem;
     }
-    .section-item-wrap .item-btn,
-    .item-btn {
-        display: inline-flex;
-        border-radius: 0 10px 10px 0;
-        -webkit-border-radius: 0 10px 10px 0;
-        -moz-border-radius: 0 10px 10px 0;
-        -ms-border-radius: 0 10px 10px 0;
-        -o-border-radius: 0 10px 10px 0;
-        padding: 1rem;
-        flex-grow: 1.5;
-        justify-content: center;
-        max-width: 120px;
+    .itemSwiper .item-date {
+        display: block;
+        font-size: 1rem;
     }
-    .section-item-wrap,
-    .section-list-item-wrap {
-        display: flex;
-    }
-    .section-item-wrap:not(:first-of-type),
-    .section-list-item-wrap:not(:first-of-type) {
-        margin-top: 1rem;
+    .item-date {
+        display: inline;
+        font-size: 1rem;
     }
 
     /* section お知らせ */
@@ -79,46 +66,5 @@
     .news-content div:not(:first-child) {
         padding-left: 1.5rem;
     }
-
-    /* section list item (過去のカウンセリング) */
-    /* .section-list-item-wrap {
-        display: flex;
-        background-color: var(--faleblue);
-        border-radius: 10px;
-        -webkit-border-radius: 10px;
-        -moz-border-radius: 10px;
-        -ms-border-radius: 10px;
-        -o-border-radius: 10px;
-        margin-top: 10px;
-    } */
-    /* .list-item-content {
-        display: flex;
-        flex-direction: row;
-        flex-grow: 3;
-        flex-basis: 100%;
-        padding: 10px;
-        align-items: center;
-    } */
-    /* .list-item-content .item-date {
-        flex-basis: 50%;
-    }
-    .list-item-content .item-time {
-        flex-basis: 25%;
-    }
-    .list-item-content .item-conseller {
-        flex-basis: 25%;
-    } */
-
-    /* .section-list-item-wrap .item-btn {
-        flex-grow: 1.5;
-        border-radius: 0 10px 10px 0;
-        -webkit-border-radius: 0 10px 10px 0;
-        -moz-border-radius: 0 10px 10px 0;
-        -ms-border-radius: 0 10px 10px 0;
-        -o-border-radius: 0 10px 10px 0;
-        display: flex;
-        justify-content: center;
-        align-items:center
-    } */
 
 }
