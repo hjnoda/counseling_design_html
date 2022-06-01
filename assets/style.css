@@ -26,6 +26,11 @@ a {
     text-decoration: none;
 }
 
+button,
+input {
+    border: none;
+}
+
 /* form common */
 .col-form-label {
     font-size: 90%;
@@ -290,6 +295,7 @@ input.greeting-btn {
     -ms-border-radius: 0 10px 10px 0;
     -o-border-radius: 0 10px 10px 0;
     flex-basis: 20%;
+    border: none;
 }
 
 .item-btn.start {
