@@ -58,8 +58,52 @@
                             <span class="section-title-text">カウンセラー選択</span>
                         </div>
                         <div class="bg-content mt-3">
-                            <div></div>
-
+                            <div class="d-flex align-items-center">
+                                <img src="/assets/img/nakae_kitada.png" width="80" height="80" class="bg-white rounded-circle">
+                                <div class="ps-3">
+                                    <p class="mb-0 small">臨床心理士・公認心理師</p>
+                                    <h5>北田 隆義</h5>
+                                    <input id="trigger1" class="grad-trigger" type="checkbox">
+                                    <div class="grad-item text-start small">
+                                        <h6 class="pt-3 border-bottom">経歴</h6>
+                                        <p>北海道医療大学 心理科学部臨床心理学科　卒業<br>
+                                            北翔大学大学院<br>
+                                            精神科病院勤務歴　12年（カウンセリング、心理検査、その他）<br>
+                                            スクールカウンセラー歴　4年（小学校、中学校、高校）</p>
+                                        <h6 class="border-bottom">専門とする分野</h6>
+                                        <p>気分障害、不安障害などの困りごとへの認知行動療法<br>
+                                            中学校～大学で生じる困りごとへの認知行動療法<br>
+                                            職場ストレス、夫婦間の問題・困りごとへの認知行動療法<br>
+                                            成人の発達障害での困りごとへの認知行動療法</p>
+                                    </div>
+                                    <label class="grad-btn" for="trigger1"></label>
+                                </div>
+                                <input type="radio" class="ms-auto">
+                            </div>
+                        </div>
+                        <div class="bg-content mt-3">
+                            <div class="d-flex align-items-center">
+                                <img src="/assets/img/nakae_hashimoto.png" width="80" height="80" class="bg-white rounded-circle">
+                                <div class="ps-3">
+                                    <p class="mb-0 small">公認心理師</p>
+                                    <h5>橋本 彩絵</h5>
+                                    <input id="trigger2" class="grad-trigger" type="checkbox">
+                                    <div class="grad-item text-start small">
+                                        <h6 class="pt-3 border-bottom">経歴</h6>
+                                        <p>北海道医療大学 心理科学部臨床心理学科　卒業<br>
+                                            北翔大学大学院<br>
+                                            精神科病院勤務歴　12年（カウンセリング、心理検査、その他）<br>
+                                            スクールカウンセラー歴　4年（小学校、中学校、高校）</p>
+                                        <h6 class="border-bottom">専門とする分野</h6>
+                                        <p>気分障害、不安障害などの困りごとへの認知行動療法<br>
+                                            中学校～大学で生じる困りごとへの認知行動療法<br>
+                                            職場ストレス、夫婦間の問題・困りごとへの認知行動療法<br>
+                                            成人の発達障害での困りごとへの認知行動療法</p>
+                                    </div>
+                                    <label class="grad-btn" for="trigger2"></label>
+                                </div>
+                                <input type="radio" class="ms-auto">
+                            </div>
                         </div>
                     </div>
                     <!-- section日時を選択 -->
@@ -155,8 +199,10 @@
     </script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script>
-        var adSwiper = new Swiper('.adSwiper', {
-            slidesPerView: "auto",
+        var coSwiper = new Swiper('.coSwiper', {
+            centeredSlides: true,
+            slidesPerView: "2.5",
+            loop: true,
             spaceBetween: 10,
             pagination: {
                 el: ".swiper-pagination",

@@ -12,33 +12,41 @@
     --textnavlink: #7c7c7c;
     --textdefault: #333;
 }
+
 /* common */
 .container {
     max-width: 996px;
 }
+
 .d-tablet {
     display: none;
 }
+
 a {
     text-decoration: none;
 }
+
 /* form common */
 .col-form-label {
     font-size: 90%;
     font-weight: 500;
     opacity: .65;
 }
+
 .form-check-input:checked {
     background-color: var(--blue);
     border-color: var(--blue);
 }
+
 .form-check-input:focus {
     box-shadow: 0 0 0 0.25rem var(--blueinactive);
 }
+
 .form-control:focus {
     border-color: var(--blueinactivetext);
     box-shadow: 0 0 0 0.25rem var(--blueinactive);
 }
+
 /* layout common */
 .bg-content {
     background-color: var(--faleblue);
@@ -49,11 +57,13 @@ a {
     -o-border-radius: 10px;
     padding: 1.5rem;
 }
+
 /* nav */
 .brand {
     display: flex;
     align-items: center;
 }
+
 .brand-badge {
     font-weight: 500;
     font-size: 1rem;
@@ -67,6 +77,7 @@ a {
     color: var(--white);
     margin-left: .5rem;
 }
+
 .brand-text {
     font-size: 2rem;
     font-weight: 700;
@@ -89,16 +100,18 @@ a {
     padding: 0.375rem 0.75rem;
     font-size: 1rem;
     border-radius: 0.625rem;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     -webkit-border-radius: 0.625rem;
     -moz-border-radius: 0.625rem;
     -ms-border-radius: 0.625rem;
     -o-border-radius: 0.625rem;
 }
+
 .btn-area {
-    padding-left:3rem;
+    padding-left: 3rem;
     padding-right: 3rem;
 }
+
 .default-btn {
     width: 100%;
     appearance: none;
@@ -115,9 +128,11 @@ a {
     -ms-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
 }
+
 .default-btn:not(:first-of-type) {
     margin-top: 15px;
 }
+
 .default-btn:hover {
     box-shadow: 0 3px 20px rgba(0, 0, 0, .5);
 }
@@ -127,29 +142,35 @@ a {
     border-color: var(--salmon);
     color: var(--white);
 }
+
 .default-btn.outline-salmon {
     background-color: var(--white);
     border-color: var(--salmon);
-    color:  var(--salmon);
+    color: var(--salmon);
 }
+
 .default-btn:hover.solid-salmon,
 .default-btn:hover.outline-salmon {
     box-shadow: 0 3px 20px rgba(224, 114, 94, 1);
 }
+
 .default-btn.solid-blue {
     background-color: var(--blue);
     border-color: var(--blue);
     color: var(--white);
 }
+
 .default-btn.outline-blue {
     background-color: var(--white);
     border-color: var(--blue);
-    color:  var(--blue);
+    color: var(--blue);
 }
+
 .default-btn:hover.solid-blue,
 .default-btn:hover.outline-blue {
     box-shadow: 0 3px 20px rgba(28, 55, 122, .7);
 }
+
 /* greeting */
 .greeting {
     display: flex;
@@ -158,11 +179,14 @@ a {
     padding-top: .5rem;
     padding-bottom: .5rem;
 }
+
 .greeting-text {
     font-size: 1.4rem;
     font-weight: 500;
 }
-.greeting-btn {
+
+.greeting-btn,
+input.greeting-btn {
     background-color: var(--salmon);
     color: var(--white);
     margin-top: 1rem;
@@ -177,7 +201,10 @@ a {
     -moz-transition: all .25s;
     -ms-transition: all .25s;
     -o-transition: all .25s;
+    border: none;
+    min-width: 320px;
 }
+
 .greeting-btn:hover {
     background-color: var(--blue);
     color: var(--white);
@@ -187,6 +214,7 @@ a {
 .section {
     margin-top: 3rem;
 }
+
 .section-title {
     display: flex;
 }
@@ -196,26 +224,32 @@ a {
     font-size: 1.2rem;
     padding-left: .25rem;
 }
+
 .section-title-icon {
     margin-left: auto;
     padding-right: .25rem;
     color: var(--salmon);
 }
+
 /* swiper common */
 .swiper-wrapper {
     /* swiper pagination外に出す */
     padding-bottom: 40px;
 }
+
 /* list */
 .section-item-wrap {
     display: flex;
 }
+
 .section-item-wrap:not(:first-child) {
     margin-top: 10px;
 }
+
 .itemSwiper .section-item-wrap:not(:first-child) {
     margin-top: 0;
 }
+
 .item-content {
     background-color: var(--faleblue);
     padding: 1rem;
@@ -226,20 +260,25 @@ a {
     -o-border-radius: 10px 0 0 10px;
     flex-grow: 3;
 }
+
 .item-content i {
     color: var(--blue);
 }
+
 .section-item {
     margin-top: 1rem;
 }
+
 .item-date {
     display: block;
     font-size: 1.2rem;
 }
-.item-time, 
+
+.item-time,
 .item-counselor {
     display: inline;
 }
+
 /* section カウンセリング待ち */
 .item-btn {
     display: flex;
@@ -252,28 +291,36 @@ a {
     -o-border-radius: 0 10px 10px 0;
     flex-basis: 20%;
 }
+
 .item-btn.start {
     background-color: var(--salmon);
     color: var(--white);
 }
+
 .item-btn.start:hover {
     background-color: var(--salmondim);
 }
+
 .item-btn.beforestart {
     background-color: var(--salmoninactive);
     color: var(--salmoninactivetext);
+    cursor: not-allowed;
 }
+
 .item-btn.edit {
     background-color: var(--blue);
     color: var(--white);
 }
+
 .item-btn.edit:hover {
     background-color: var(--bluedim);
 }
+
 .item-btn.detail {
     background-color: var(--textnavlink);
     color: var(--white);
 }
+
 .item-btn.detail:hover {
     background-color: var(--textdefault);
 }
@@ -283,11 +330,13 @@ a {
     width: 100%;
     margin-top: 1rem;
 }
+
 a.item-link,
 a.news-link {
     display: block;
     color: var(--textdefault);
 }
+
 a.item-link .item-content,
 a.item-link .item-content i,
 a.news-link .news-content {
@@ -297,15 +346,18 @@ a.news-link .news-content {
     -ms-transition: all .25s;
     -o-transition: all .25s;
 }
+
 a.item-link:hover .item-content,
 a.item-link:hover .item-content i,
 a.news-link:hover .news-content {
     background-color: var(--salmon);
     color: var(--white);
 }
+
 a.news-link:not(:first-of-type) {
     margin-top: .5rem;
 }
+
 .news-content {
     display: flex;
     flex-direction: column;
@@ -317,15 +369,19 @@ a.news-link:not(:first-of-type) {
     width: 100%;
     padding: .5rem 1rem;
 }
+
 .news-content {
     background-color: var(--faleblue);
 }
+
 .news-content.news-important {
     background-color: var(--salmoninactive);
 }
+
 .news-content.news-important i {
     color: var(--salmondim);
 }
+
 .news-date {
     opacity: .5;
     font-size: .8rem;
@@ -336,6 +392,7 @@ a.news-link:not(:first-of-type) {
     max-width: 200px;
     margin-top: 1rem;
 }
+
 .ad-content {
     background-color: var(--faleblue);
     padding: .75rem;
@@ -346,17 +403,21 @@ a.news-link:not(:first-of-type) {
     -o-border-radius: 10px;
     text-align: center;
 }
+
 .ad-title {
     font-weight: 500;
     font-size: .9rem;
 }
+
 .ad-percent {
     color: var(--salmon);
     font-size: 2.4rem;
 }
+
 .ad-percent span {
     font-size: .8rem;
 }
+
 .ad-subtitle {
     opacity: .5;
     font-size: .8rem;
@@ -365,4 +426,61 @@ a.news-link:not(:first-of-type) {
 /* cancel detail 予約キャンセル詳細ページ */
 .table.th-30 th {
     width: 30%;
+}
+
+/* 予約：カウンセラー選択 */
+.grad-btn {
+    background-color: var(--salmon);
+    color: var(--white);
+    cursor: pointer;
+    font-size: 80%;
+    padding: .1rem .75rem;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.grad-btn::before {
+    content: "詳細情報＋"
+}
+
+.grad-item {
+    position: relative;
+    overflow: hidden;
+    height: 0;
+}
+
+.grad-item::before {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    /*グラデーションで隠す高さ*/
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(255, 255, 255, 0.9) 50%, #fff 100%);
+    background: linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(255, 255, 255, 0.9) 50%, #fff 100%);
+    content: "";
+}
+
+.grad-trigger {
+    display: none;
+    /*チェックボックスは常に非表示*/
+}
+
+.grad-trigger:checked~.grad-btn::before {
+    content: "閉じる"
+        /*チェックされていたら、文言を変更する*/
+}
+
+.grad-trigger:checked~.grad-item {
+    height: auto;
+    /*チェックされていたら、高さを戻す*/
+}
+
+.grad-trigger:checked~.grad-item::before {
+    display: none;
+    /*チェックされていたら、grad-itemのbeforeを非表示にする*/
 }
