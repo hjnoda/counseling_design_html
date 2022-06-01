@@ -5,7 +5,7 @@
         padding-bottom: 4rem;
     }
     .d-tablet {
-        display: block!important;
+        display: block;
     }
 
     /* rightside nav */
@@ -35,8 +35,9 @@
     .itemSwiper .section-item-wrap {
         display: flex;
     }
+    .itemSwiper .section-item-wrap:not(:first-child),
     .section-item-wrap:not(:first-of-type){
-        margin-top: 1rem;
+        margin-top: 10px;
     }
     .item-content {
         display: inline-flex;

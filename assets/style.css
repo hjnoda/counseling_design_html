@@ -17,7 +17,7 @@
     max-width: 996px;
 }
 .d-tablet {
-    display: none!important;
+    display: none;
 }
 a {
     text-decoration: none;
@@ -213,6 +213,9 @@ a {
 .section-item-wrap:not(:first-child) {
     margin-top: 10px;
 }
+.itemSwiper .section-item-wrap:not(:first-child) {
+    margin-top: 0;
+}
 .item-content {
     background-color: var(--faleblue);
     padding: 1rem;
@@ -358,6 +361,7 @@ a.news-link:not(:first-of-type) {
     opacity: .5;
     font-size: .8rem;
 }
+
 /* cancel detail 予約キャンセル詳細ページ */
 .table.th-30 th {
     width: 30%;
