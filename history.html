@@ -30,19 +30,9 @@
                         <span>野田　賢貞</span><span class="small ms-2">様</span>
                     </a>
                     <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
-                        <li><a class="dropdown-item" href="/profile.html#baseinfo">基本情報</a></li>
-                        <li><a class="dropdown-item" href="/profile.html#hospitalinfo">通院情報</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="/history_wait.html">カウンセリング待ち</a></li>
-                        <li><a class="dropdown-item" href="/history_past.html">過去のカウンセリング</a></li>
-                        <li><a class="dropdown-item" href="/history_cancel.html">キャンセル履歴</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>                   
+                        <li><a class="dropdown-item" href="/profile.html">基本情報</a></li>
+                        <li><a class="dropdown-item" href="/history.html">カウンセリング履歴</a></li>                 
                         <li><a class="dropdown-item" href="#">お知らせ</a></li>
-                        <li><a class="dropdown-item" href="#">通知一覧</a></li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>   
@@ -65,6 +55,7 @@
                     <div class="section">
                         <div class="section-title" id="baseInfo">
                             <span class="section-title-text">カウンセリング待ち</span>
+                            <a href="/history_wait.html" class="section-title-icon"><i class="bi bi-three-dots"></i></a>
                         </div>
                         <div class="swiper itemSwiper">
                             <div class="swiper-wrapper section-item">
@@ -79,7 +70,7 @@
                                             <i class="bi bi-stopwatch"></i>
                                             <span>30</span><span>分</span>
                                         </div>
-                                        <div class="item-conseller">
+                                        <div class="item-counselor">
                                             <i class="bi bi-person-badge"></i>
                                             <span>橋本 彩絵</span>
                                         </div>
@@ -97,7 +88,7 @@
                                             <i class="bi bi-stopwatch"></i>
                                             <span>30</span><span>分</span>
                                         </div>
-                                        <div class="item-conseller">
+                                        <div class="item-counselor">
                                             <i class="bi bi-person-badge"></i>
                                             <span>橋本 彩絵</span>
                                         </div>
@@ -115,7 +106,7 @@
                                             <i class="bi bi-stopwatch"></i>
                                             <span>30</span><span>分</span>
                                         </div>
-                                        <div class="item-conseller">
+                                        <div class="item-counselor">
                                             <i class="bi bi-person-badge"></i>
                                             <span>橋本 彩絵</span>
                                         </div>
@@ -123,24 +114,129 @@
                                     <div class="bttn item-btn edit">変更</div>
                                 </div>
                             </div>
+                            <div class="swiper-pagination"></div>
                         </div>
                     </div>
                     <!-- section過去のカウンセリング -->
                     <div class="section">
                         <div class="section-title" id="hospitalInfo">
                             <span class="section-title-text">過去のカウンセリング</span>
+                            <a href="/history_past.html" class="section-title-icon"><i class="bi bi-three-dots"></i></a>
                         </div>
-                        <div class="bg-content mt-3">
-
+                        <div class="section-item">
+                            <!-- item1 -->
+                            <div class="section-item-wrap">
+                                <a href="/history_past_detail.html">
+                                <div class="item-content">
+                                    <div class="item-date">
+                                        <i class="bi bi-calendar-plus"></i>
+                                        <span>2022-04-26(火)10:30～</span>
+                                    </div>
+                                    <div class="item-time">
+                                        <i class="bi bi-stopwatch"></i>
+                                        <span>30</span><span>分</span>
+                                    </div>
+                                    <div class="item-counselor">
+                                        <i class="bi bi-person-badge"></i>
+                                        <span>橋本 彩絵</span>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                            <!-- item2 -->
+                            <div class="section-item-wrap">
+                                <div class="item-content">
+                                    <div class="item-date">
+                                        <i class="bi bi-calendar-plus"></i>
+                                        <span>2022-04-26(火)10:30～</span>
+                                    </div>
+                                    <div class="item-time">
+                                        <i class="bi bi-stopwatch"></i>
+                                        <span>30</span><span>分</span>
+                                    </div>
+                                    <div class="item-counselor">
+                                        <i class="bi bi-person-badge"></i>
+                                        <span>橋本 彩絵</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item3 -->
+                            <div class="section-item-wrap">
+                                <div class="item-content">
+                                    <div class="item-date">
+                                        <i class="bi bi-calendar-plus"></i>
+                                        <span>2022-04-26(火)10:30～</span>
+                                    </div>
+                                    <div class="item-time">
+                                        <i class="bi bi-stopwatch"></i>
+                                        <span>30</span><span>分</span>
+                                    </div>
+                                    <div class="item-counselor">
+                                        <i class="bi bi-person-badge"></i>
+                                        <span>橋本 彩絵</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <!-- sectionキャンセル済み -->
+                    <!-- sectionキャンセル履歴 -->
                     <div class="section">
                         <div class="section-title" id="hospitalInfo">
                             <span class="section-title-text">キャンセル履歴</span>
+                            <a href="/history_cancel.html" class="section-title-icon"><i class="bi bi-three-dots"></i></a>
                         </div>
-                        <div class="bg-content mt-3">
-
+                        <div class="section-item">
+                            <!-- item1 -->
+                            <div class="section-item-wrap">
+                                <div class="item-content">
+                                    <div class="item-date">
+                                        <i class="bi bi-calendar-plus"></i>
+                                        <span>2022-04-26(火)10:30～</span>
+                                    </div>
+                                    <div class="item-time">
+                                        <i class="bi bi-stopwatch"></i>
+                                        <span>30</span><span>分</span>
+                                    </div>
+                                    <div class="item-counselor">
+                                        <i class="bi bi-person-badge"></i>
+                                        <span>橋本 彩絵</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item2 -->
+                            <div class="section-item-wrap">
+                                <div class="item-content">
+                                    <div class="item-date">
+                                        <i class="bi bi-calendar-plus"></i>
+                                        <span>2022-04-26(火)10:30～</span>
+                                    </div>
+                                    <div class="item-time">
+                                        <i class="bi bi-stopwatch"></i>
+                                        <span>30</span><span>分</span>
+                                    </div>
+                                    <div class="item-counselor">
+                                        <i class="bi bi-person-badge"></i>
+                                        <span>橋本 彩絵</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item3 -->
+                            <div class="section-item-wrap">
+                                <div class="item-content">
+                                    <div class="item-date">
+                                        <i class="bi bi-calendar-plus"></i>
+                                        <span>2022-04-26(火)10:30～</span>
+                                    </div>
+                                    <div class="item-time">
+                                        <i class="bi bi-stopwatch"></i>
+                                        <span>30</span><span>分</span>
+                                    </div>
+                                    <div class="item-counselor">
+                                        <i class="bi bi-person-badge"></i>
+                                        <span>橋本 彩絵</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>                    
                 </div>

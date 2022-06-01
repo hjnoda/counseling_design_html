@@ -3,7 +3,7 @@
     --blue: #166AB5;
     --blueinactivetext: #669fd1;
     --bluedim: #00427b;
-    --faleblue: #F7FAFD;
+    --faleblue: #f2f9fe;
     --blueinactive: #D0E1F0;
     --salmon: #E0725E;
     --salmondim: #d24027;
@@ -24,7 +24,7 @@ a {
 }
 /* form common */
 .col-form-label {
-    font-size: 85%;
+    font-size: 90%;
     font-weight: 500;
     opacity: .65;
 }
@@ -201,11 +201,14 @@ a {
     padding-right: .25rem;
     color: var(--salmon);
 }
-
-/* section 予約リスト */
-.section-item {
-    max-width: 250px;
-    margin-top: 1rem;
+/* swiper common */
+.swiper-wrapper {
+    /* swiper pagination外に出す */
+    padding-bottom: 40px;
+}
+/* list */
+.section-item-wrap:not(:first-child) {
+    margin-top: 10px;
 }
 .item-content {
     background-color: var(--faleblue);
@@ -219,7 +222,20 @@ a {
 .item-content i {
     color: var(--blue);
 }
-.item-btn {
+.section-item {
+    margin-top: 1rem;
+}
+.itemSwiper .item-date {
+    display: block;
+    font-size: 1.5rem;
+}
+.item-time, 
+.item-counselor {
+    display: inline;
+}
+/* section カウンセリング待ち */
+
+.itemSwiper .item-btn {
     border-radius: 0 0 10px 10px;
     -webkit-border-radius: 0 0 10px 10px;
     -moz-border-radius: 0 0 10px 10px;
@@ -327,39 +343,38 @@ a.news-link:not(:first-of-type) {
     font-size: .8rem;
 }
 
-/* section list item (過去のカウンセリング) */
+/* section list item */
+.list-item-content {
+    display: inline-flex;
+    border-radius: 10px 0 0 10px;
+    -webkit-border-radius: 10px 0 0 10px;
+    -moz-border-radius: 10px 0 0 10px;
+    -ms-border-radius: 10px 0 0 10px;
+    -o-border-radius: 10px 0 0 10px;
+    flex-grow: 3;
+}
+.list-item-content div:not(:first-child) {
+    padding-left: 1.5rem;
+}
 .section-list-item-wrap {
     display: flex;
-    background-color: var(--faleblue);
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    margin-top: 10px;
 }
-.list-item-content {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px;
-}
-.list-item-content .item-date {
-    flex-basis: 100%;
-}
-.list-item-content .item-time {
-    flex-basis: 30%;
-}
-.list-item-content .item-conseller {
-    flex-basis: 70%;
+.section-list-item-wrap:not(:first-of-type) {
+    margin-top: 1rem;
 }
 .section-list-item-wrap .item-btn {
-    flex-basis: 30%;
+    display: inline-flex;
     border-radius: 0 10px 10px 0;
     -webkit-border-radius: 0 10px 10px 0;
     -moz-border-radius: 0 10px 10px 0;
     -ms-border-radius: 0 10px 10px 0;
     -o-border-radius: 0 10px 10px 0;
-    display: flex;
+    padding: 1rem;
+    flex-grow: 1.5;
     justify-content: center;
-    align-items:center
+    max-width: 120px;
+}
+/* cancel detail 予約キャンセル詳細ページ */
+.table.th-30 th {
+    width: 30%;
 }

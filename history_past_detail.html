@@ -51,76 +51,29 @@
             <main class="col-12 col-md-8">
                 <div class="main-wrap">
                     <div><span class="h3">カウンセリング履歴</span></div>
-                    <!-- sectionカウンセリング待ち -->
+                    <!-- section履歴詳細 -->
                     <div class="section">
                         <div class="section-title">
-                            <span class="section-title-text">キャンセル履歴</span>
+                            <span class="section-title-text">決済内容</span>
                         </div>
-                        <div class="section-list-item">
-                            <!-- item1 -->
-                            <div class="section-list-item-wrap">
-                                <div class="list-item-content">
-                                    <div class="item-date">
-                                        <i class="bi bi-calendar-plus"></i>
-                                        <span>2022-04-26(火)10:30～</span>
-                                    </div>
-                                    <div class="item-time">
-                                        <i class="bi bi-stopwatch"></i>
-                                        <span>30</span><span>分</span>
-                                    </div>
-                                    <div class="item-conseller">
-                                        <i class="bi bi-person-badge"></i>
-                                        <span>橋本 彩絵</span>
-                                    </div>
-                                </div>
-                                <a href="/history_cancel_detail.html" class="bttn item-btn edit">
-                                    詳細
-                                </a>
-                            </div>
-                            <!-- item2 -->
-                            <div class="section-list-item-wrap">
-                                <div class="list-item-content">
-                                    <div class="item-date">
-                                        <i class="bi bi-calendar-plus"></i>
-                                        <span>2022-04-26(火)10:30～</span>
-                                    </div>
-                                    <div class="item-time">
-                                        <i class="bi bi-stopwatch"></i>
-                                        <span>30</span><span>分</span>
-                                    </div>
-                                    <div class="item-conseller">
-                                        <i class="bi bi-person-badge"></i>
-                                        <span>橋本 彩絵</span>
-                                    </div>
-                                </div>
-                                <a href="/history_cancel_detail.html" class="bttn item-btn edit">
-                                    詳細
-                                </a>
-                            </div>
-                            <!-- item3 -->
-                            <div class="section-list-item-wrap">
-                                <div class="list-item-content">
-                                    <div class="item-date">
-                                        <i class="bi bi-calendar-plus"></i>
-                                        <span>2022-04-26(火)10:30～</span>
-                                    </div>
-                                    <div class="item-time">
-                                        <i class="bi bi-stopwatch"></i>
-                                        <span>30</span><span>分</span>
-                                    </div>
-                                    <div class="item-conseller">
-                                        <i class="bi bi-person-badge"></i>
-                                        <span>橋本 彩絵</span>
-                                    </div>
-                                </div>
-                                <a href="/history_cancel_detail.html" class="bttn item-btn edit">
-                                    詳細
-                                </a>
-                            </div>
-                        </div>
+                        <table class="table th-30">
+                            <tbody>
+                                <tr><th>カウンセリング日時</th><td>2022-04-26(水)10:32</td></tr>
+                                <tr><th>カウンセリング時間</th><td>30分</td></tr>
+                                <tr><th>カウンセラー</th><td>橋本 彩絵</td></tr>
+                                <tr><th>決済金額</th><td>5,700円</td></tr>
+                                <tr><th>決済日時</th><td>2022-04-20(水)23:32</td></tr>
+                                <tr><th>決済方法</th><td>カード決済</td></tr>
+                                <tr><th>ステータス</th><td>正常終了</td></tr>
+                            </tbody>
+                        </table>
                     </div>                    
                 </div>
-
+                <!-- section ボタンエリア -->                   
+                <div class="section btn-area">
+                    <button type="button" class="default-btn outline-salmon" onclick="history.back()">文章作成</button>
+                    <button type="button" class="default-btn outline-blue" onclick="history.back()">戻る</button>
+                </div>
             </main>
             <aside class="d-none d-md-block col-md-4">
                 <div class="section-nav">
