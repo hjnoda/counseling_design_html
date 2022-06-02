@@ -471,6 +471,7 @@ a.news-link:not(:first-of-type) {
 .ad-percent {
     color: var(--salmon);
     font-size: 2.4rem;
+    line-height: 1;
 }
 
 .ad-percent span {
@@ -828,61 +829,92 @@ a.news-link:not(:first-of-type) {
 /* creditcard animation */
 .form-container {
     margin: 0 auto;
-  }
-  .form-container .field-container:first-of-type {
-    grid-area: name;
-  }
-  
-  .form-container .field-container:nth-of-type(2) {
-    grid-area: number;
-  }
-  
-  .form-container .field-container:nth-of-type(3) {
-    grid-area: expiration;
-  }
-  
-  .form-container .field-container:nth-of-type(4) {
-    grid-area: security;
-  }
-  
-  .field-container input {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-  
-  .field-container {
-    position: relative;
-  }
-  
-  .form-container {
-    display: grid;
-    grid-column-gap: 10px;
-    grid-template-columns: auto auto;
-    grid-template-rows: 90px 90px 90px;
-    grid-template-areas: "name name""number number""expiration security";
-    max-width: 400px;
-    padding: 20px;
-    color: #707070;
-  }
-  
-  .field-container label {
-    padding-bottom: 5px;
-    font-size: 13px;
-  }
-  
-  .field-container input {
-    margin-top: 3px;
-    padding: 15px;
-    font-size: 16px;
-    width: 100%;
-    border-radius: 3px;
-    border: 1px solid #dcdcdc;
-  }
-  
-  .ccicon {
-    height: 38px;
-    position: absolute;
-    right: 10px;
-    top: calc(50% - 4px);
-    width: 60px;
-  }
+}
+.form-container .field-container:first-of-type {
+grid-area: name;
+}
+
+.form-container .field-container:nth-of-type(2) {
+grid-area: number;
+}
+
+.form-container .field-container:nth-of-type(3) {
+grid-area: expiration;
+}
+
+.form-container .field-container:nth-of-type(4) {
+grid-area: security;
+}
+
+.field-container input {
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+.field-container {
+position: relative;
+}
+
+.form-container {
+display: grid;
+grid-column-gap: 10px;
+grid-template-columns: auto auto;
+grid-template-rows: 90px 90px 90px;
+grid-template-areas: "name name""number number""expiration security";
+max-width: 400px;
+padding: 20px;
+color: #707070;
+}
+
+.field-container label {
+padding-bottom: 5px;
+font-size: 13px;
+}
+
+.field-container input {
+margin-top: 3px;
+padding: 15px;
+font-size: 16px;
+width: 100%;
+border-radius: 3px;
+border: 1px solid #dcdcdc;
+}
+
+.ccicon {
+height: 38px;
+position: absolute;
+right: 10px;
+top: calc(50% - 4px);
+width: 60px;
+}
+
+/* faq page */
+#faq .accordion-body {
+    padding-bottom: 3rem;
+    color: var(--textdefault);
+    background-color: var(--faleblue);
+}
+#faq .accordion-button:not(.collapsed) {
+    color: var(--blue);
+    background-color: var(--faleblue);
+    box-shadow: none;
+}
+#faq i {
+    color: var(--blue);
+}
+
+/* 料金案内 */
+.line-trough {
+    text-decoration: line-through;
+}
+.mt-2rem {
+    margin-top: 0;
+}
+.discount {
+    display: flex;
+    flex-direction: column;
+}
+.discount div:first-child {
+    flex-basis: auto;
+    white-space: nowrap;
+}

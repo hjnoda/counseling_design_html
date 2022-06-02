@@ -72,4 +72,14 @@
     .grad-wrap {
         flex-basis: 80%;
     }
+
+    /* 利用料金 */
+    .mt-2rem {
+        margin-top: 2rem;
+    }
+    .discount {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
 }
