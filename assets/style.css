@@ -162,7 +162,7 @@ input[type="radio"]{
     width: 100%;
     appearance: none;
     border-style: solid;
-    padding: 1rem 2rem;
+    padding: .75rem 1.5rem;
     border-radius: 50px;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
@@ -173,6 +173,9 @@ input[type="radio"]{
     -moz-transition: all .3s ease-in-out;
     -ms-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
+}
+.default-btn.small {
+    padding: .2rem .75rem;
 }
 button.default-btn,
 .default-btn:not(:first-of-type) {
