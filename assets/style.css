@@ -485,6 +485,9 @@ a.news-link:not(:first-of-type) {
 }
 
 /* 予約：カウンセラー選択 */
+.grad-wrap {
+    flex-basis: 70%;
+}
 .grad-btn {
     background-color: var(--salmon);
     color: var(--white);
