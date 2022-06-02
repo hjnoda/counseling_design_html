@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>通知一覧</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
@@ -46,98 +46,12 @@
         <div class="row row-wrap">
             <main class="col-12 col-md-8">
                 <div class="main-wrap">
-                    <div class="greeting">
-                        <div class="greeting-text">ノダ様、体調はいかがですか？</div>
-                        <a href="profile.html" class="bttn greeting-btn">プロフィールを完成して予約する</a>
-                        <input type="submit" class="bttn greeting-btn" onclick="location.href='/reservation.html'" value="予約する">
-                    </div>
-                    <!-- section1 予約情報-->
+                    <div><span class="h3">通知一覧</span></div>
+                    <!-- section お知らせ-->
                     <div class="section">
-                        <div class="section-title">
-                            <span class="section-title-text">カウンセリング待ち</span>
-                            <a href="/history_wait.html" class="section-title-icon">MORE<i class="bi bi-plus"></i></a>
-                        </div>
-                        <div class="swiper itemSwiper">
-                            <div class="swiper-wrapper section-item">
-                                <!-- item1 -->
-                                <div class="swiper-slide section-item-wrap">
-                                    <div class="item-content">
-                                        <div class="item-date">
-                                            <!-- <i class="bi bi-calendar-plus"></i> -->
-                                            <span>2022-04-26(火)10:30～</span>
-                                        </div>
-                                        <div class="item-time">
-                                            <i class="bi bi-stopwatch"></i>
-                                            <span>30</span><span>分</span>
-                                        </div>
-                                        <div class="item-counselor">
-                                            <i class="bi bi-person-badge"></i>
-                                            <span>橋本 彩絵</span>
-                                        </div>
-                                    </div>
-                                    <div class="bttn item-btn start">開始</div>
-                                </div>
-                                <!-- item2 -->
-                                <div class="swiper-slide section-item-wrap">
-                                    <div class="item-content">
-                                        <div class="item-date">
-                                            <span>2022-04-26(火)10:30～</span>
-                                        </div>
-                                        <div class="item-time">
-                                            <i class="bi bi-stopwatch"></i>
-                                            <span>30</span><span>分</span>
-                                        </div>
-                                        <div class="item-counselor">
-                                            <i class="bi bi-person-badge"></i>
-                                            <span>橋本 彩絵</span>
-                                        </div>
-                                    </div>
-                                    <div class="bttn item-btn beforestart">開始</div>
-                                </div>
-                                <!-- item3 -->
-                                <div class="swiper-slide section-item-wrap">
-                                    <div class="item-content">
-                                        <div class="item-date">
-                                            <span>2022-04-26(火)10:30～</span>
-                                        </div>
-                                        <div class="item-time">
-                                            <i class="bi bi-stopwatch"></i>
-                                            <span>30</span><span>分</span>
-                                        </div>
-                                        <div class="item-counselor">
-                                            <i class="bi bi-person-badge"></i>
-                                            <span>橋本 彩絵</span>
-                                        </div>
-                                    </div>
-                                    <div class="bttn item-btn edit">変更</div>
-                                </div>
-                            </div>
-                            <div class="swiper-pagination"></div>
-                        </div>
-                    </div>
-                    <!-- section2 お知らせ-->
-                    <div class="section">
-                        <div class="section-title">
-                            <span class="section-title-text">お知らせ</span>
-                            <a href="/news.html" class="section-title-icon">MORE<i class="bi bi-plus"></i></a>
-                        </div>
                         <div class="section-news">
-                            <!-- news1 -->
-                            <a href="/news_detail.html" class="news-link">
-                                <div class="section-news-wrap">
-                                    <div class="news-content news-important">
-                                        <div class="news-date">
-                                            <span>2022-04-26</span>
-                                        </div>
-                                        <div class="news-text">
-                                            <i class="bi bi-exclamation-circle"></i>
-                                            <span>5/1(日) 22:00~04:00システムメンテナンスがあります</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            <!-- news2 -->
-                            <a href="" class="news-link">
+                            <!-- news normal -->
+                            <a href="/notification_detail.html" class="news-link">
                                 <div class="section-news-wrap">
                                     <div class="news-content">
                                         <div class="news-date">
@@ -149,7 +63,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <!-- news3 -->
+                            <!-- news normal -->
                             <a href="" class="news-link">
                                 <div class="section-news-wrap">
                                     <div class="news-content">
@@ -162,7 +76,46 @@
                                     </div>
                                 </div>
                             </a>
-                            <!-- news4 -->
+                            <!-- news normal -->
+                            <a href="" class="news-link">
+                                <div class="section-news-wrap">
+                                    <div class="news-content">
+                                        <div class="news-date">
+                                            <span>2022-04-27</span>
+                                        </div>
+                                        <div class="news-text">
+                                            <span>NAKAE.ONLINE新規登録を完了しました。</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- news normal -->
+                            <a href="" class="news-link">
+                                <div class="section-news-wrap">
+                                    <div class="news-content">
+                                        <div class="news-date">
+                                            <span>2022-04-27</span>
+                                        </div>
+                                        <div class="news-text">
+                                            <span>クリア病院が提携病院になりました。</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- news normal -->
+                            <a href="" class="news-link">
+                                <div class="section-news-wrap">
+                                    <div class="news-content">
+                                        <div class="news-date">
+                                            <span>2022-04-27</span>
+                                        </div>
+                                        <div class="news-text">
+                                            <span>プロフィールをアップデートしてください。</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- news normal -->
                             <a href="" class="news-link">
                                 <div class="section-news-wrap">
                                     <div class="news-content">
@@ -177,57 +130,20 @@
                             </a>
                         </div>
                     </div>
-                    <!-- section3 広告 -->
                     <div class="section">
-                        <div class="section-title">
-                            <span class="section-title-text">NAKAE.ONLINEの割引</span>
-                            <a href="" class="section-title-icon">MORE<i class="bi bi-plus"></i></a>
-                        </div>
-                        <div class="swiper adSwiper">
-                            <div class="swiper-wrapper section-ad">
-                                <!-- item1 -->
-                                <div class="swiper-slide">
-                                    <div class="ad-content">
-                                        <div class="ad-title">初めての方</div>
-                                        <div class="ad-percent">20<span>%</span></div>
-                                        <div class="ad-subtitle">初回限定</div>
-                                    </div>
-                                </div>
-                                <!-- item2 -->
-                                <div class="swiper-slide">
-                                    <div class="ad-content">
-                                        <div class="ad-title">学生の方</div>
-                                        <div class="ad-percent">15<span>%</span></div>
-                                        <div class="ad-subtitle">継続適用</div>
-                                    </div>
-                                </div>
-                                <!-- item3 -->
-                                <div class="swiper-slide">
-                                    <div class="ad-content">
-                                        <div class="ad-title">中江病院通院中の方</div>
-                                        <div class="ad-percent">20<span>%</span></div>
-                                        <div class="ad-subtitle">継続適用</div>
-                                    </div>
-                                </div>
-                                <!-- item4 -->
-                                <div class="swiper-slide">
-                                    <div class="ad-content">
-                                        <div class="ad-title">提携病院通院中の方</div>
-                                        <div class="ad-percent">10<span>%</span></div>
-                                        <div class="ad-subtitle">継続適用</div>
-                                    </div>
-                                </div>
-                                <!-- item5 -->
-                                <div class="swiper-slide">
-                                    <div class="ad-content">
-                                        <div class="ad-title">連続割引</div>
-                                        <div class="ad-percent">20<span>%</span></div>
-                                        <div class="ad-subtitle">継続適用</div>
-                                    </div>
-                                </div>                        
-                            </div>
-                            <div class="swiper-pagination"></div>
-                        </div>
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1" aria-disabled="true"><i class="bi bi-chevron-left"></i></a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#"><i class="bi bi-chevron-right"></i></a>
+                            </li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
             </main>
@@ -267,7 +183,7 @@
                             <a class="nav-link nav-link-title text-dark fw-bold">お知らせ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/news.html">お知らせ</a>
+                            <a class="nav-link" href="/news.html">お知らせ一覧</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/notification.html">通知一覧</a>

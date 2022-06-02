@@ -60,7 +60,7 @@
                         <div class="bg-content mt-3">
                             <div class="d-flex align-items-center">
                                 <img src="/assets/img/nakae_kitada.png" width="80" height="80" class="bg-white rounded-circle">
-                                <label class="ps-3" for="counselor01">
+                                <label class="form-check-label ps-3" for="counselor01">
                                     <p class="mb-0 small">臨床心理士・公認心理師</p>
                                     <h5>北田 隆義</h5>
                                     <input id="trigger1" class="grad-trigger" type="checkbox">
@@ -78,13 +78,13 @@
                                     </div>
                                     <label class="grad-btn" for="trigger1"></label>
                                 </label>
-                                <input type="radio" id="counselor01" class="ms-auto">
+                                <input type="radio" id="counselor01" name="counselor" class="form-check-input ms-auto" value="">
                             </div>
                         </div>
                         <div class="bg-content mt-3">
                             <div class="d-flex align-items-center">
                                 <img src="/assets/img/nakae_hashimoto.png" width="80" height="80" class="bg-white rounded-circle">
-                                <label class="ps-3" for="counselor02">
+                                <label class="form-check-label ps-3" for="counselor02">
                                     <p class="mb-0 small">公認心理師</p>
                                     <h5>橋本 彩絵</h5>
                                     <input id="trigger2" class="grad-trigger" type="checkbox">
@@ -102,13 +102,13 @@
                                     </div>
                                     <label class="grad-btn" for="trigger2"></label>
                                 </label>
-                                <input type="radio" id="counselor02" class="ms-auto">
+                                <input type="radio" id="counselor02" name="counselor" class="form-check-input ms-auto" value="">
                             </div>
                         </div>
                         <div class="bg-content mt-3">
                             <div class="d-flex align-items-center">
                                 <img src="/assets/img/counselor_m.png" width="80" height="80" class="bg-white rounded-circle">
-                                <label class="ps-3" for="counselor03">
+                                <label class="form-check-label ps-3" for="counselor03">
                                     <p class="mb-0 small">公認心理師</p>
                                     <h5>カウンセラー3</h5>
                                     <input id="trigger3" class="grad-trigger" type="checkbox">
@@ -126,13 +126,13 @@
                                     </div>
                                     <label class="grad-btn" for="trigger3"></label>
                                 </label>
-                                <input type="radio" id="counselor03" class="ms-auto">
+                                <input type="radio" id="counselor03" name="counselor" class="form-check-input ms-auto" value="">
                             </div>
                         </div>
                         <div class="bg-content mt-3">
                             <div class="d-flex align-items-center">
                                 <img src="/assets/img/counselor_w.png" width="80" height="80" class="bg-white rounded-circle">
-                                <label class="ps-3" for="counselor04">
+                                <label class="form-check-label ps-3" for="counselor04">
                                     <p class="mb-0 small">公認心理師</p>
                                     <h5>カウンセラー4</h5>
                                     <input id="trigger4" class="grad-trigger" type="checkbox">
@@ -150,7 +150,7 @@
                                     </div>
                                     <label class="grad-btn" for="trigger4"></label>
                                 </label>
-                                <input type="radio" id="counselor04" class="ms-auto">
+                                <input type="radio" id="counselor04" name="counselor" class="form-check-input ms-auto" value="">
                             </div>
                         </div>
                     </div>
@@ -166,8 +166,8 @@
                     </div>
                     <!-- section ボタンエリア -->                   
                     <div class="section btn-area">
-                        <button type="submit" class="default-btn solid-blue">次へ</button>
-                        <button type="button" class="default-btn outline-blue" onclick="history.back()">戻る</button>
+                        <input type="button" class="default-btn solid-blue" onClick="location.href='/survey.html'" value="次へ">
+                        <button type="button" class="default-btn outline-blue" onClick="history.back()">戻る</button>
                     </div>
                 </div>
 
@@ -206,9 +206,6 @@
                     <ul class="nav flex-column">
                         <li class="nav-item">
                             <a class="nav-link nav-link-title text-dark fw-bold">お知らせ</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">重要なお知らせ</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">お知らせ</a>
